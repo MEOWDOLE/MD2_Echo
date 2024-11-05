@@ -14,5 +14,20 @@ To unlock the menu in MovieStarPlanet 2, follow these steps:
 3. **Copy and paste the following code** into the console:
 
 ```javascript
-fetch("https://raw.githubusercontent.com/MEOWDOLE/MD2_Echo/refs/heads/main/script.js").then(t=>{if(!t.ok)throw Error("Network response was not ok");return t.text()}).then(scriptContent=>{console.log("Executing script content:"),console.log(scriptContent),eval(scriptContent)}).catch(t=>{console.error("There was a problem with the fetch operation:",t)});
+fetch(
+  "https://raw.githubusercontent.com/MEOWDOLE/MD2_Echo/refs/heads/main/script.js"
+)
+  .then((t) => {
+    if (!t.ok) throw Error("Network response was not ok");
+    return t.text();
+  })
+  .then((scriptContent) => {
+    console.log("Executing script content:"),
+      console.log(scriptContent),
+      eval(scriptContent);
+  })
+  .catch((t) => {
+    console.error("There was a problem with the fetch operation:", t);
+  });
+
 ```
